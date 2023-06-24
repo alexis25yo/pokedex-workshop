@@ -1,5 +1,5 @@
-import { footerElements } from "./scripts.js/data/dataDom.js";
-import { printFooter } from "./scripts.js/modules/printFooter.js";
+import { footerElements } from "./scripts/data/dataDom.js";
+import { printFooter } from "./scripts/modules/printFooter.js";
 
 footerElements.forEach((footer) => {
   footer.addEventListener("click", printFooter);
