@@ -1,6 +1,11 @@
 import { footerElements } from "./scripts/data/dataDom.js";
+import { getPokemons } from "./scripts/data/getPokemons.js";
 import { printFooter } from "./scripts/modules/printFooter.js";
 
-footerElements.forEach((footer) => {
-  footer.addEventListener("click", printFooter);
+getPokemons();
+
+footerElements.forEach((containerPokemons) => {
+  containerPokemons.addEventListener("click", () => {
+    console.log("hola mundo");
+  });
 });

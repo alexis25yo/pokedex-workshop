@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>POKEDEX_</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./img/pokebola3.png" type="image/png">
@@ -19,13 +25,13 @@
       />
       <p class="title red pokedex">POKÉDEX_</p>
     </header>
-    <main class="master color main">
+    <main class="master  color">
       <section class="charizard color">
         <figure class="tipo_fuego white">
-        <img src="./img/fuego2.png" alt="tipo fueo" height="60px" width="auto" class="white"/>
+        <img src="./img/fuego2.png" alt="tipo fueo" height="30px" width="auto" class="white"/>
         <p><h1 class="white">CHARIZARD</h1></p>
         </figure>
-        <img src="./img/Charizard2.png" alt="charizard" class="color destello">
+        <img src="./img/Charizard2.png" alt="charizard" class="color charizardimg">
       </section>
       <div class="table-container">
         <table>
@@ -47,13 +53,10 @@
       </div>
     </main>
     <footer id="footer">
-      <ul class="lista">
-        <li class="pie"><h2 class="pie">OTHERS</h2></li>
-        <li class="fondo"><img src="./img/chokorita.png" alt="Imagen 1"  class="fondoima"/></li>
-        <li class="fondo"><img src="./img/Entei.png" alt="Imagen 2"  class="fondoima"/></li>
-        <li class="fondo"><img src="./img/gyarados.png" alt="Imagen 3"  class="fondoima"/></li>
-        <li class="fondo"><img src="./img/lucariomega.png" alt="Imagen 4" class="fondoima"/></li>
-      </ul>
+      <h2 class="pie">OTHERS</h2>
+      <div id="containerPokemons" class="containerPokemons">
+        <!-- <li class="fondo"><img src="./img/chokorita.png" alt="Imagen 1"  class="fondoima"/></li> -->
+      </div>
     </footer>
     <script src="./script.js" type="module"></script>
   </body>
