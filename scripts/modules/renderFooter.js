@@ -1,7 +1,7 @@
 import { containerPokemons } from "../data/dataDom.js";
 
 export const renderFooter = (listPokemons) => {
-  console.log("Hello", listPokemons);
+  //console.log("Hello", listPokemons);
   containerPokemons.innerHTML = "";
 
   for (let i = 0; i < listPokemons.length; i++) {

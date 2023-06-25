@@ -1,7 +1,7 @@
 import { URL_API } from "./data.js";
 import { renderFooter } from "../modules/renderFooter.js";
 
-const listPokemons = [];
+export const listPokemons = [];
 
 export const getPokemons = async () => {
   try {
@@ -14,15 +14,17 @@ export const getPokemons = async () => {
             const newPokemon = {
               name: resp.data.name,
               image: resp.data.sprites.front_default,
+              no: resp.data.order,
+              type: resp.data.types[0].type.name,
+              hability: resp.data.abilities[0].ability.name,
               height: resp.data.height,
-              experience: resp.data.base_experience,
-              specie: resp.data.species.name,
               weight: resp.data.weight,
+              level: resp.data.base_experience,
             };
             listPokemons.push(newPokemon);
+            // console.log(resp);
             if (response.data.results.length === index + 1) {
               resolve(renderFooter(listPokemons));
-              console.log("Estoy funcionando.");
             }
           } catch (error) {
             reject(error);
