@@ -329,10 +329,6 @@ footer {
     z-index: 1;
   }
 
-  .charizardimg {
-    background-color: #00000000;
-  }
-
   .pokeImg {
     position: absolute;
     top: 35px;
@@ -353,7 +349,7 @@ footer {
     position: absolute;
     bottom: 5px;
     left: 28%;
-    padding: 0px;
+    padding: 0;
     z-index: 1;
     border-radius: 15px;
     overflow: hidden;
