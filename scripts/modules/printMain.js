@@ -1,5 +1,5 @@
 import { listPokemons } from "../data/getPokemons.js";
-import { pokeImg, pokeName, tbody } from "../data/dataDom.js";
+import { pokeImg, pokeName, tbody, tbody2 } from "../data/dataDom.js";
 
 export const getInfo = (clickedElement) => {
   const foundPokemon = listPokemons.find(
@@ -12,9 +12,8 @@ export const getInfo = (clickedElement) => {
     printPokemonImg(foundPokemon);
     printPokemonName(foundPokemon);
     printTable(foundPokemon);
-    // Realizar las acciones necesarias con la información del usuario encontrado
+    printTable2(foundPokemon);
   } else {
-    //console.log("Number not found in the array:", enteredCel);
     console.log("no enocontrado");
   }
 };
@@ -75,8 +74,38 @@ const printTable = (array) => {
               <td><span>HABILITY</span> <br />${hability}</td>
             </tr>
             <tr>
-              <td><span>HEIGHT</span> <br />${height} m</td>
+              <td><span>HEIGHT</span> <br />${height} </td>
               <td><span>WEIGHT</span> <br />${weight} Kg</td>
           </tr>  
+  `;
+};
+
+const printTable2 = (array) => {
+  let container = tbody2;
+  const type = array.type;
+  const hability = array.hability;
+  const height = array.height;
+  const weight = array.weight;
+  const no = array.no;
+  const level = array.level;
+  container.innerHTML = `
+          <tr>
+              <td><span>NO.</span>${no}</td>
+            </tr>
+            <tr>
+              <td><span>LEVEL</span>${level}</td>
+            </tr>
+            <tr>
+            <td><span>TYPE</span>${type}</td>
+            </tr>
+            <tr>              
+              <td><span>HABILITY</span>${hability}</td>
+            </tr>
+            <tr>
+              <td><span>HEIGHT</span> ${height}  </td>
+            </tr>
+            <tr>
+              <td><span>WEIGHT</span> ${weight} Kg</td>
+            </tr>
   `;
 };

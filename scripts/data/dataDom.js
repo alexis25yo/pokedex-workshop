@@ -3,3 +3,8 @@ export const containerPokemons = document.getElementById("containerPokemons");
 export const pokeImg = document.querySelector(".pokeImg");
 export const pokeName = document.querySelector(".tipo_fuego");
 export const tbody = document.querySelector(".tbody");
+export let search = document.querySelector(".search");
+export let searchBox = document.querySelector(".searchBox");
+export let close = document.querySelector(".close");
+export let tbody2 = document.querySelector(".tbody2");
+export const input = document.querySelector("input[type='text']");
