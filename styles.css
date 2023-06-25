@@ -242,6 +242,7 @@ footer {
 
 .fondoima:hover {
   filter: grayscale(100%);
+  margin: 0 5px 0 0px;
 }
 
 .pie {

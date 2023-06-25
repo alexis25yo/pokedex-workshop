@@ -14,12 +14,12 @@ export const getPokemons = async () => {
             const newPokemon = {
               name: resp.data.name,
               image: resp.data.sprites.front_default,
-              no: resp.data.order,
+              no: resp.data.order.toString(),
               type: resp.data.types[0].type.name,
               hability: resp.data.abilities[0].ability.name,
-              height: resp.data.height,
-              weight: resp.data.weight,
-              level: resp.data.base_experience,
+              height: resp.data.height.toString(),
+              weight: resp.data.weight.toString(),
+              level: resp.data.base_experience.toString(),
             };
             listPokemons.push(newPokemon);
             // console.log(resp);

@@ -7,6 +7,8 @@ import {
 } from "./scripts/data/dataDom.js";
 import { getPokemons } from "./scripts/data/getPokemons.js";
 import { getInfo } from "./scripts/modules/printMain.js";
+import searchInput from "./scripts/modules/search.js";
+import resetInput from "./scripts/modules/resetInput.js";
 
 getPokemons();
 
@@ -23,6 +25,7 @@ search.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
   searchBox.classList.remove("active");
+  resetInput();
 });
 
 const objeto = {};
@@ -31,6 +34,6 @@ input.addEventListener("blur", (event) => {
   const tamaño = Object.keys(valorInput).length;
   if (tamaño != 0) {
     objeto.valor = valorInput;
-    console.log(objeto);
+    searchInput(objeto);
   }
 });
