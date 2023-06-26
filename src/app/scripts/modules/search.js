@@ -1,4 +1,4 @@
-import { listPokemons } from "../data/getPokemons.js";
+import { listPokemons } from "../data/getPokemons";
 
 export let listSearch = [];
 

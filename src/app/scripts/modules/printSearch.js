@@ -1,4 +1,4 @@
-import { searchPokemon } from "../data/dataDom.js";
+import { searchPokemon } from "../data/dataDom";
 
 export const printSearch = (listPokemons) => {
   searchPokemon.innerHTML = "";

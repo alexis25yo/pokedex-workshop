@@ -1,4 +1,4 @@
-import { containerPokemons } from "../data/dataDom.js";
+import { containerPokemons } from "../data/dataDom";
 
 export const renderFooter = (listPokemons, index) => {
   if (index === 1) {

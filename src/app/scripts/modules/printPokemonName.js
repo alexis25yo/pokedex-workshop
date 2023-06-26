@@ -1,5 +1,5 @@
-import { pokeName } from "../data/dataDom.js";
-import imgType from "./imgType.js";
+import { pokeName } from "../data/dataDom";
+import imgType from "./imgType";
 
 export const printPokemonName = (array) => {
   let container = pokeName;

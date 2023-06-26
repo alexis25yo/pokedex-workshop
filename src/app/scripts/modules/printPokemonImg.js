@@ -1,4 +1,4 @@
-import { pokeImg } from "../data/dataDom.js";
+import { pokeImg } from "../data/dataDom";
 
 export const printPokemonImg = (array) => {
   let container = pokeImg;

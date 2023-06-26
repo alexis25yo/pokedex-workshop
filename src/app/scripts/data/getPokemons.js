@@ -1,5 +1,6 @@
-import { URL_API } from "./data.js";
-import { renderFooter } from "../modules/renderFooter.js";
+import axios from "axios";
+import { URL_API } from "./data";
+import { renderFooter } from "../modules/renderFooter";
 
 export const listPokemons = [];
 

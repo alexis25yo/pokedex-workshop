@@ -1,8 +1,8 @@
-import { listPokemons } from "../data/getPokemons.js";
-import { printPokemonImg } from "./printPokemonImg.js";
-import { printPokemonName } from "./printPokemonName.js";
-import printTable from "./printTable.js";
-import printTable2 from "./printTable2.js";
+import { listPokemons } from "../data/getPokemons";
+import { printPokemonImg } from "./printPokemonImg";
+import { printPokemonName } from "./printPokemonName";
+import printTable from "./printTable";
+import printTable2 from "./printTable2";
 
 export const getInfo = (clickedElement) => {
   const foundPokemon = listPokemons.find(

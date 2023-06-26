@@ -233,31 +233,17 @@ footer {
   overflow-x: auto;
   margin: 20px;
   background-color: var(--color-red);
-  -webkit-mask-image: -webkit-linear-gradient(
-    left,
-    transparent,
-    white 50px,
-    white calc(100% - 50px),
-    transparent
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    white 50px,
-    white calc(100% - 50px),
-    transparent
-  );
 }
 
 .searchPokemon ul li {
-  /* justify-content: flex-end; */
   background-color: var(--color-red);
   list-style: none;
   padding: 10px;
 }
 
 .fondoima {
-  background-image: url("./img/portal.png");
+  // background-image: url("./imagenes/portal.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;

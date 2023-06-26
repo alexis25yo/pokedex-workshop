@@ -1,4 +1,4 @@
-import { tbody2 } from "../data/dataDom.js";
+import { tbody2 } from "../data/dataDom";
 
 const printTable2 = (array) => {
   let container = tbody2;
