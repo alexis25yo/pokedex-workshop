@@ -1,12 +1,14 @@
 import { listPokemons } from "../data/getPokemons.js";
 
+export let listSearch = [];
+
 const searchInput = (objeto) => {
   // Verificar si el objeto tiene el atributo "valor"
   if (objeto && objeto.valor) {
     const nombrePokemon = objeto.valor.toLowerCase();
 
     // Buscar el pokémon en la lista completa
-    const foundName = listPokemons.find((pokemon) =>
+    const foundName = listPokemons.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(nombrePokemon)
     );
 
@@ -25,19 +27,32 @@ const searchInput = (objeto) => {
     if (foundName && foundName.length > 0) {
       console.log("¡Pokémon encontrado!");
       console.log(foundName);
-    }
-    if (foundHability && foundHability.length > 0) {
+      listSearch = foundName;
+      return listSearch;
+    } else if (foundHability && foundHability.length > 0) {
       console.log("¡Pokémon encontrado!");
       console.log(foundHability);
-    }
-    if (foundImage && foundImage.length > 0) {
+      listSearch = foundHability;
+      return listSearch;
+    } else if (foundImage && foundImage.length > 0) {
       console.log("¡Pokémon encontrado!");
       console.log(foundImage);
-    }
-    if (foundType && foundType.length > 0) {
+      listSearch = foundImage;
+      return listSearch;
+    } else if (foundType && foundType.length > 0) {
       console.log("¡Pokémon encontrado!");
       console.log(foundType);
+      listSearch = foundType;
+      return listSearch;
+    } else {
+      console.log("No se encontró ningún Pokémon.");
+      listSearch = [];
+      return listSearch;
     }
+  } else {
+    console.log("No se ingresó un valor de búsqueda.");
+    listSearch = [];
+    return listSearch;
   }
 };
 
