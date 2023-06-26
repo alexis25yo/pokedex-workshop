@@ -1,3 +1,7 @@
+$color-red: rgb(230, 60, 60);
+$color-blue: rgb(36, 82, 150);
+$color-green: #2a7c27;
+
 :root {
   --color-red: rgb(230, 60, 60);
   --color-blue: rgb(36, 82, 150);
@@ -8,7 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--color-blue);
+  background-color: $color-red;
 }
 
 body {
@@ -19,7 +23,7 @@ body {
 
 .banner {
   display: flex;
-  background-color: var(--color-red);
+  background-color: $color-red;
   padding: 10px;
   margin-top: 30px;
   margin-left: 30px;
